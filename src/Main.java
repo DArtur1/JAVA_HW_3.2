@@ -2,11 +2,12 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        BmiService bmi = new BmiService();
 
-            System.out.println("i = " + i);
+        double heightMeter = 1.87;
+        double weightKg = 98;
+        int calcBmi = bmi.calculate(heightMeter, weightKg);
+
+        System.out.println("Ваш ИМТ = " + calcBmi);
         }
     }
-}
